@@ -36,3 +36,12 @@ sessionStorage.setItem(key,value);
 if(key == 1){
     sessionStorage.clear();
 }
+
+//storage Event 
+
+// we can listen it when value in sotrage is changed it gives alert in separate tab
+
+window.onstorage = (e) => {
+    alert('changed');
+    console.log(e);
+}
